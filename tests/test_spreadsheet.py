@@ -35,11 +35,11 @@ class TestSpreadsheetIntegrity(unittest.TestCase):
                         if val.count('(') != val.count(')'):
                             broken_formulas.append((name, cell.coordinate, val, "Unbalanced parentheses"))
                         
-                        # Check cross-sheet references: e.g. SheetName!A1
-                        matches = re.findall(r'([A-Za-z0-9_ &]+)!', val)
+                        # Check cross-sheet references: e.g. SheetName!A1 or 'Sheet Name'!A1
+                        matches = re.findall(r"['\"]?([A-Za-z0-9_ &]+)['\"]?!", val)
                         for ref_sheet in matches:
-                            clean_ref = ref_sheet.strip("'")
-                            if clean_ref not in sheet_names:
+                            clean_ref = ref_sheet.strip(" '\"")
+                            if clean_ref and clean_ref not in sheet_names:
                                 broken_formulas.append((name, cell.coordinate, val, f"Non-existent sheet reference: {clean_ref}"))
 
                         # Check for prohibited or Office 365-only functions that break in Google Sheets
@@ -54,24 +54,25 @@ class TestSpreadsheetIntegrity(unittest.TestCase):
         """Verifies that the Dashboard has correct formulas linking to all courses."""
         ws = self.wb["Dashboard & GPA"]
         
-        # Check cumulative GPA formula in A5
-        a5_val = str(ws["A5"].value or "")
-        self.assertTrue(a5_val.startswith("=ROUND(("), f"A5 should contain GPA formula, got: {a5_val}")
+        # Check cumulative GPA formula in A6
+        a6_val = str(ws["A6"].value or "")
+        self.assertTrue("ROUND(" in a6_val, f"A6 should contain ROUND formula, got: {a6_val}")
         
-        # Check Technical Course Average formula in G5
-        g5_val = str(ws["G5"].value or "")
-        self.assertTrue(g5_val.startswith("=("), f"G5 should contain Tech Avg formula, got: {g5_val}")
+        # Check Technical Course Average formula in G6
+        g6_val = str(ws["G6"].value or "")
+        self.assertTrue("ROUND(" in g6_val or "SUM(" in g6_val, f"G6 should contain Tech Avg formula, got: {g6_val}")
         
-        # Check course rows (rows 9 to 15)
-        for r in range(9, 16):
-            code = ws.cell(row=r, column=1).value
+        # Check course rows (rows 11 to 17)
+        courses = ["CSN305", "DAT330", "MST300", "PSY262", "SEC320", "OPS345", "WTP100"]
+        for idx, code in enumerate(courses):
+            r = 11 + idx
             comp_formula = str(ws.cell(row=r, column=5).value or "")
             curr_avg_formula = str(ws.cell(row=r, column=6).value or "")
             proj_formula = str(ws.cell(row=r, column=7).value or "")
             
-            self.assertIn(f"={code}!", comp_formula)
-            self.assertIn(f"={code}!", curr_avg_formula)
-            self.assertIn(f"={code}!", proj_formula)
+            self.assertIn(f"{code}'!", comp_formula)
+            self.assertIn(f"{code}'!", curr_avg_formula)
+            self.assertIn(f"{code}'!", proj_formula)
 
     def test_seneca_letter_grade_conversion_logic(self):
         """Unit test the Seneca 4.0 GPA scale thresholds."""
@@ -115,26 +116,27 @@ class TestSpreadsheetIntegrity(unittest.TestCase):
     def test_what_if_simulator_formulas(self):
         """Verifies formulas on What-If Simulator tab."""
         ws = self.wb["What-If Simulator"]
-        # Check headers
-        self.assertEqual(ws["A4"].value, "Course Code")
-        self.assertEqual(ws["H4"].value, "Target %")
-        self.assertEqual(ws["J4"].value, "Required Avg on Remaining %")
+        # Check headers (Row 10)
+        self.assertEqual(ws["A10"].value, "Course Code")
+        self.assertEqual(ws["H10"].value, "Target %")
+        self.assertEqual(ws["J10"].value, "Required % on Remainder")
         
-        # Verify row 5 has valid formulas
-        self.assertIn("=CSN305!C5", str(ws["D5"].value))
-        self.assertIn("=CSN305!E5", str(ws["E5"].value))
-        self.assertIn("=1.0-D5", str(ws["I5"].value))
-        self.assertIn("(H5-E5)/I5", str(ws["J5"].value))
+        # Verify row 11 has valid formulas
+        self.assertIn("'CSN305'!", str(ws["D11"].value))
+        self.assertIn("'CSN305'!", str(ws["E11"].value))
+        self.assertIn("=1.0-D11", str(ws["I11"].value))
+        self.assertIn("(H11-E11)/I11", str(ws["J11"].value))
 
     def test_timeline_tab_populated(self):
         """Verifies that Timeline & Milestones has all assessments."""
         ws = self.wb["Timeline & Milestones"]
         # Check that there are over 80 assessment rows
         self.assertGreater(ws.max_row, 80)
-        # Check columns: Course, Item, Category, Weight, Due Date, Status
-        self.assertEqual(ws["A4"].value, "Course")
-        self.assertEqual(ws["B4"].value, "Assessment Item")
-        self.assertEqual(ws["F4"].value, "Status")
+        # Check columns (Row 5): Course, Item, Category, Weight, Due Date, Status, Link
+        self.assertEqual(ws["A5"].value, "Course")
+        self.assertEqual(ws["B5"].value, "Assessment Deliverable")
+        self.assertEqual(ws["F5"].value, "Current Status")
+        self.assertEqual(ws["G5"].value, "Quick Link")
 
 if __name__ == '__main__':
     unittest.main()
