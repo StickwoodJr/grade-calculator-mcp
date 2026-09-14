@@ -1,0 +1,200 @@
+{
+  "course_code": "OPS345",
+  "course_name": "Open System Application Server",
+  "credits": 3.0,
+  "term": "Fall 2026 / Semester 3",
+  "is_technical": true,
+  "grading_type": "percentage_gpa",
+  "syllabus_file": "Welcome to OPS345 _ OPS345v2 - Open System Application Server.pdf",
+  "grade_scale": "Seneca 4.0",
+  "passing_criteria": [
+    "Achieve a grade of 50% or higher in the overall course"
+  ],
+  "categories": [
+    {
+      "category_id": "labs",
+      "name": "Labs",
+      "weight_percent": 16.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "ops345-lab-1",
+          "name": "Lab 1",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-23",
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-lab-2",
+          "name": "Lab 2",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-23",
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-lab-3",
+          "name": "Lab 3",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-23",
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-lab-4",
+          "name": "Lab 4",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-23",
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-lab-5",
+          "name": "Lab 5",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-lab-6",
+          "name": "Lab 6",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-lab-7",
+          "name": "Lab 7",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-lab-8",
+          "name": "Lab 8",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "assignments",
+      "name": "Assignments",
+      "weight_percent": 30.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "ops345-asgn-1",
+          "name": "Assignment 1",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-asgn-2",
+          "name": "Assignment 2",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "quizzes",
+      "name": "Quizzes",
+      "weight_percent": 4.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "ops345-quiz-1",
+          "name": "Quiz 1",
+          "weight_percent": 1.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-quiz-2",
+          "name": "Quiz 2",
+          "weight_percent": 1.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-quiz-3",
+          "name": "Quiz 3",
+          "weight_percent": 1.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        },
+        {
+          "id": "ops345-quiz-4",
+          "name": "Quiz 4",
+          "weight_percent": 1.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "midterm",
+      "name": "Midterm Test",
+      "weight_percent": 25.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "ops345-midterm",
+          "name": "Midterm Test",
+          "weight_percent": 25.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-21",
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "final_test",
+      "name": "Final Test",
+      "weight_percent": 25.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "ops345-final-test",
+          "name": "Final Test",
+          "weight_percent": 25.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        }
+      ]
+    }
+  ],
+  "hurdles": []
+}

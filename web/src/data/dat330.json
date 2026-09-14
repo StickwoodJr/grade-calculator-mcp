@@ -1,0 +1,272 @@
+{
+  "course_code": "DAT330",
+  "course_name": "Introduction to Databases",
+  "credits": 3.0,
+  "term": "Fall 2026 / Semester 3",
+  "is_technical": true,
+  "grading_type": "percentage_gpa",
+  "syllabus_file": "syllabi-2267-dat330-nbb-5201-loggedin.pdf",
+  "grade_scale": "Seneca 4.0",
+  "passing_criteria": [
+    "Achieve a grade of 50% or higher in the overall course",
+    "Achieve a weighted average of 50% or higher on all labs",
+    "Achieve a weighted average of 50% or higher on all tests",
+    "Achieve a weighted average of 50% or higher on assignments and project"
+  ],
+  "categories": [
+    {
+      "category_id": "budget",
+      "name": "Management of Budget Allotment",
+      "weight_percent": 10.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "dat330-budget",
+          "name": "Budget Allotment",
+          "weight_percent": 10.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "labs",
+      "name": "Labs",
+      "weight_percent": 20.0,
+      "drop_lowest_n": 0,
+      "hurdle_min_percent": 50.0,
+      "hurdle_description": "Achieve a weighted average of 50% or higher on all labs",
+      "items": [
+        {
+          "id": "dat330-lab-1",
+          "name": "Lab 1",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-09-17",
+          "status": "Done"
+        },
+        {
+          "id": "dat330-lab-2",
+          "name": "Lab 2",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-09-24",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-lab-3",
+          "name": "Lab 3",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-08",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-lab-4",
+          "name": "Lab 4",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-15",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-lab-5",
+          "name": "Lab 5",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-5",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-lab-6",
+          "name": "Lab 6",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-12",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-lab-7",
+          "name": "Lab 7",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-19",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-lab-8",
+          "name": "Lab 8",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-12-3",
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "quizzes",
+      "name": "Quizzes",
+      "weight_percent": 10.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "dat330-quiz-1",
+          "name": "Quiz 1",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-09-21",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-quiz-2",
+          "name": "Quiz 2",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-09-28",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-quiz-3",
+          "name": "Quiz 3",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-09",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-quiz-4",
+          "name": "Quiz 4",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-23",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-quiz-5",
+          "name": "Quiz 5",
+          "weight_percent": 2.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-30",
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "assignments",
+      "name": "Assignments",
+      "weight_percent": 15.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "dat330-asgn-1",
+          "name": "Assignment 1",
+          "weight_percent": 5.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-01",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-asgn-2",
+          "name": "Assignment 2",
+          "weight_percent": 5.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-22",
+          "status": "Not Started"
+        },
+        {
+          "id": "dat330-asgn-3",
+          "name": "Assignment 3",
+          "weight_percent": 5.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-26",
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "midterm",
+      "name": "Midterm Test",
+      "weight_percent": 15.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "dat330-midterm",
+          "name": "Midterm Test",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-19",
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "final_test",
+      "name": "Final Test",
+      "weight_percent": 15.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "dat330-final-test",
+          "name": "Final Test",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "final_project",
+      "name": "Final Project",
+      "weight_percent": 15.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "dat330-final-proj",
+          "name": "Final Project",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-12-07",
+          "status": "Not Started"
+        }
+      ]
+    }
+  ],
+  "hurdles": [
+    {
+      "type": "category_average",
+      "target_category": "labs",
+      "min_percentage": 50.0,
+      "description": "Achieve a weighted average of 50% or higher on all labs"
+    },
+    {
+      "type": "custom",
+      "description": "Achieve a weighted average of 50% or higher on all tests (Midterm + Final Test)"
+    },
+    {
+      "type": "custom",
+      "description": "Achieve a weighted average of 50% or higher on assignments and project"
+    }
+  ]
+}

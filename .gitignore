@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+*.egg-info/
+
+# Node / Vite
+node_modules/
+web/node_modules/
+web/dist/
+.vite/
+
+# Logs & Environment
+*.log
+.env
+.env.local
+.DS_Store
+
+# Temporary outputs
+scratch/

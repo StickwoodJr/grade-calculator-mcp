@@ -1,0 +1,176 @@
+{
+  "course_code": "CSN305",
+  "course_name": "Virtualization and Cloud Infrastructure",
+  "credits": 3.0,
+  "term": "Fall 2026 / Semester 3",
+  "is_technical": true,
+  "grading_type": "percentage_gpa",
+  "syllabus_file": "syllabi-2267-csn305-nbb-5197-loggedin.pdf",
+  "grade_scale": "Seneca 4.0",
+  "passing_criteria": [
+    "Achieve a grade of 50% or higher in the overall course",
+    "Achieve a weighted average of 50% or higher on all tests",
+    "Satisfactorily complete all labs"
+  ],
+  "categories": [
+    {
+      "category_id": "labs",
+      "name": "Labs",
+      "weight_percent": 40.0,
+      "drop_lowest_n": 0,
+      "hurdle_min_percent": 100.0,
+      "hurdle_description": "Satisfactorily complete all 10 labs",
+      "items": [
+        {
+          "id": "csn305-lab-1",
+          "name": "Lab 1",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-09-17",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-lab-2",
+          "name": "Lab 2",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-09-24",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-lab-3",
+          "name": "Lab 3",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-01",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-lab-4",
+          "name": "Lab 4",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-08",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-lab-5",
+          "name": "Lab 5",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-15",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-lab-6",
+          "name": "Lab 6",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-22",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-lab-7",
+          "name": "Lab 7",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-12",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-lab-8",
+          "name": "Lab 8",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-19",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-lab-9",
+          "name": "Lab 9",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-12-3",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-lab-10",
+          "name": "Lab 10",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-09-17",
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "tests",
+      "name": "Tests",
+      "weight_percent": 60.0,
+      "drop_lowest_n": 0,
+      "hurdle_min_percent": 50.0,
+      "hurdle_description": "Achieve a weighted average of 50% or higher on all tests",
+      "items": [
+        {
+          "id": "csn305-test-1",
+          "name": "Test 1",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-01",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-test-2",
+          "name": "Test 2",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-22",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-test-3",
+          "name": "Test 3",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-19",
+          "status": "Not Started"
+        },
+        {
+          "id": "csn305-test-4",
+          "name": "Test 4",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-12-10",
+          "status": "Not Started"
+        }
+      ]
+    }
+  ],
+  "hurdles": [
+    {
+      "type": "category_average",
+      "target_category": "tests",
+      "min_percentage": 50.0,
+      "description": "Achieve a weighted average of 50% or higher on all tests"
+    },
+    {
+      "type": "all_completed",
+      "target_category": "labs",
+      "description": "Satisfactorily complete all 10 labs"
+    }
+  ]
+}

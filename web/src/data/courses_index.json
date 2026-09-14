@@ -1,0 +1,66 @@
+{
+  "program": "Computer Systems Technology (CTY)",
+  "institution": "Seneca Polytechnic",
+  "semester": "Semester 3",
+  "term": "Fall 2026",
+  "grade_scale": "Seneca 4.0",
+  "total_credits": 19.0,
+  "courses": [
+    {
+      "code": "CSN305",
+      "name": "Virtualization and Cloud Infrastructure",
+      "credits": 3.0,
+      "is_technical": true,
+      "grading_type": "percentage_gpa",
+      "file": "csn305.json"
+    },
+    {
+      "code": "DAT330",
+      "name": "Introduction to Databases",
+      "credits": 3.0,
+      "is_technical": true,
+      "grading_type": "percentage_gpa",
+      "file": "dat330.json"
+    },
+    {
+      "code": "MST300",
+      "name": "Introduction to Microsoft Cloud Technologies",
+      "credits": 3.0,
+      "is_technical": true,
+      "grading_type": "percentage_gpa",
+      "file": "mst300.json"
+    },
+    {
+      "code": "PSY262",
+      "name": "Applied Psychology of Mindfulness",
+      "credits": 3.0,
+      "is_technical": false,
+      "grading_type": "percentage_gpa",
+      "file": "psy262.json"
+    },
+    {
+      "code": "SEC320",
+      "name": "Incident Response and Computer Forensics",
+      "credits": 3.0,
+      "is_technical": true,
+      "grading_type": "percentage_gpa",
+      "file": "sec320.json"
+    },
+    {
+      "code": "OPS345",
+      "name": "Open System Application Server",
+      "credits": 3.0,
+      "is_technical": true,
+      "grading_type": "percentage_gpa",
+      "file": "ops345.json"
+    },
+    {
+      "code": "WTP100",
+      "name": "Work Term Preparation",
+      "credits": 1.0,
+      "is_technical": false,
+      "grading_type": "sat_un",
+      "file": "wtp100.json"
+    }
+  ]
+}

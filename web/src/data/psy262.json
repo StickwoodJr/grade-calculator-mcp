@@ -1,0 +1,182 @@
+{
+  "course_code": "PSY262",
+  "course_name": "Applied Psychology of Mindfulness",
+  "credits": 3.0,
+  "term": "Fall 2026 / Semester 3",
+  "is_technical": false,
+  "grading_type": "percentage_gpa",
+  "syllabus_file": "syllabi-2267-psy262-nbb-7086-loggedin.pdf",
+  "grade_scale": "Seneca 4.0",
+  "passing_criteria": [
+    "Achieve a grade of 50% or higher in the overall course"
+  ],
+  "categories": [
+    {
+      "category_id": "in_class",
+      "name": "In-Class Assignments",
+      "weight_percent": 25.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "psy262-asgn-1",
+          "name": "Assignment 1",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-18",
+          "status": "Not Started"
+        },
+        {
+          "id": "psy262-asgn-2",
+          "name": "Assignment 2",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-18",
+          "status": "Not Started"
+        },
+        {
+          "id": "psy262-asgn-3",
+          "name": "Assignment 3",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-25",
+          "status": "Not Started"
+        },
+        {
+          "id": "psy262-asgn-4",
+          "name": "Assignment 4",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-02",
+          "status": "Not Started"
+        },
+        {
+          "id": "psy262-asgn-5",
+          "name": "Assignment 5",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-09",
+          "status": "Not Started"
+        },
+        {
+          "id": "psy262-asgn-6",
+          "name": "Assignment 6",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-09",
+          "status": "Not Started"
+        },
+        {
+          "id": "psy262-asgn-7",
+          "name": "Assignment 7",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-16",
+          "status": "Not Started"
+        },
+        {
+          "id": "psy262-asgn-8",
+          "name": "Assignment 8",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-23",
+          "status": "Not Started"
+        },
+        {
+          "id": "psy262-asgn-9",
+          "name": "Assignment 9",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-23",
+          "status": "Not Started"
+        },
+        {
+          "id": "psy262-asgn-10",
+          "name": "Assignment 10",
+          "weight_percent": 2.5,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-18",
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "writing",
+      "name": "Writing Assignment",
+      "weight_percent": 10.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "psy262-writing",
+          "name": "Writing Assignment",
+          "weight_percent": 10.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "quiz_1",
+      "name": "Quiz 1",
+      "weight_percent": 20.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "psy262-quiz-1",
+          "name": "Quiz 1",
+          "weight_percent": 20.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-02",
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "quiz_2",
+      "name": "Quiz 2",
+      "weight_percent": 20.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "psy262-quiz-2",
+          "name": "Quiz 2",
+          "weight_percent": 20.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-06",
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "final_exam",
+      "name": "Final Exam",
+      "weight_percent": 25.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "psy262-final",
+          "name": "Final Exam",
+          "weight_percent": 25.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-12-11",
+          "status": "Not Started"
+        }
+      ]
+    }
+  ],
+  "hurdles": []
+}

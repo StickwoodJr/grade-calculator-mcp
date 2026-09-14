@@ -1,0 +1,159 @@
+{
+  "course_code": "WTP100",
+  "course_name": "Work Term Preparation",
+  "credits": 1.0,
+  "term": "Fall 2026 / Semester 3",
+  "is_technical": false,
+  "grading_type": "sat_un",
+  "syllabus_file": "WTP100.pdf",
+  "grade_scale": "SAT/UN",
+  "passing_criteria": [
+    "Successfully complete each of the 14 modules",
+    "Pass each Knowledge Check with a passing score of 80% or higher to earn SAT"
+  ],
+  "categories": [
+    {
+      "category_id": "modules",
+      "name": "Modules & Knowledge Checks",
+      "weight_percent": 100.0,
+      "drop_lowest_n": 0,
+      "hurdle_min_percent": 80.0,
+      "hurdle_description": "Pass each Knowledge Check with 80% or higher",
+      "items": [
+        {
+          "id": "wtp100-mod-1",
+          "name": "Module 1",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-11",
+          "status": "Done"
+        },
+        {
+          "id": "wtp100-mod-2",
+          "name": "Module 2",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-11",
+          "status": "Done"
+        },
+        {
+          "id": "wtp100-mod-3",
+          "name": "Module 3",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-11",
+          "status": "In Progress"
+        },
+        {
+          "id": "wtp100-mod-4",
+          "name": "Module 4",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-18",
+          "status": "Not Started"
+        },
+        {
+          "id": "wtp100-mod-5",
+          "name": "Module 5",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-18",
+          "status": "Not Started"
+        },
+        {
+          "id": "wtp100-mod-6",
+          "name": "Module 6",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-25",
+          "status": "Not Started"
+        },
+        {
+          "id": "wtp100-mod-7",
+          "name": "Module 7",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-25",
+          "status": "Not Started"
+        },
+        {
+          "id": "wtp100-mod-8",
+          "name": "Module 8",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-02",
+          "status": "Not Started"
+        },
+        {
+          "id": "wtp100-mod-9",
+          "name": "Module 9",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-02",
+          "status": "Not Started"
+        },
+        {
+          "id": "wtp100-mod-10",
+          "name": "Module 10",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-11",
+          "status": "Done"
+        },
+        {
+          "id": "wtp100-mod-11",
+          "name": "Module 11",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-11",
+          "status": "Done"
+        },
+        {
+          "id": "wtp100-mod-12",
+          "name": "Module 12",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-11",
+          "status": "Done"
+        },
+        {
+          "id": "wtp100-mod-13",
+          "name": "Module 13",
+          "weight_percent": 7.14,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-11",
+          "status": "Done"
+        },
+        {
+          "id": "wtp100-mod-14",
+          "name": "Module 14",
+          "weight_percent": 7.180000000000007,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-11",
+          "status": "Done"
+        }
+      ]
+    }
+  ],
+  "hurdles": [
+    {
+      "type": "all_completed",
+      "target_category": "modules",
+      "description": "Pass all 14 Knowledge Checks with 80% or higher"
+    }
+  ]
+}

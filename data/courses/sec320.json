@@ -1,0 +1,195 @@
+{
+  "course_code": "SEC320",
+  "course_name": "Incident Response and Computer Forensics",
+  "credits": 3.0,
+  "term": "Fall 2026 / Semester 3",
+  "is_technical": true,
+  "grading_type": "percentage_gpa",
+  "syllabus_file": "syllabi-2267-sec320-nbb-5408-loggedin.pdf",
+  "grade_scale": "Seneca 4.0",
+  "passing_criteria": [
+    "Achieve a grade of 50% or higher in the overall course",
+    "Achieve a weighted average of 50% or higher on all tests",
+    "Achieve a weighted average of 50% or higher on all labs",
+    "Satisfactorily complete all labs and assignments"
+  ],
+  "categories": [
+    {
+      "category_id": "practical_tests",
+      "name": "Practical Tests",
+      "weight_percent": 30.0,
+      "drop_lowest_n": 0,
+      "hurdle_min_percent": 50.0,
+      "hurdle_description": "Weighted average of 50% or higher on all tests",
+      "items": [
+        {
+          "id": "sec320-test-1",
+          "name": "Practical Test 1",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-test-2",
+          "name": "Practical Test 2",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "labs",
+      "name": "Labs",
+      "weight_percent": 40.0,
+      "drop_lowest_n": 0,
+      "hurdle_min_percent": 50.0,
+      "hurdle_description": "Weighted average of 50% or higher on all labs",
+      "items": [
+        {
+          "id": "sec320-lab-1",
+          "name": "Lab 1",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-18",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-lab-2",
+          "name": "Lab 2",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-25",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-lab-3",
+          "name": "Lab 3",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-2",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-lab-4",
+          "name": "Lab 4",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-09",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-lab-5",
+          "name": "Lab 5",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-16",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-lab-6",
+          "name": "Lab 6",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-06",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-lab-7",
+          "name": "Lab 7",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-13",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-lab-8",
+          "name": "Lab 8",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-20",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-lab-9",
+          "name": "Lab 9",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-27",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-lab-10",
+          "name": "Lab 10",
+          "weight_percent": 4.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-9-18",
+          "status": "Not Started"
+        }
+      ]
+    },
+    {
+      "category_id": "final_project",
+      "name": "Final Project",
+      "weight_percent": 30.0,
+      "drop_lowest_n": 0,
+      "items": [
+        {
+          "id": "sec320-proj-prop",
+          "name": "Project Proposal",
+          "weight_percent": 5.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-10-23",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-proj-pres",
+          "name": "Project Presentation",
+          "weight_percent": 10.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": "2026-11-30",
+          "status": "Not Started"
+        },
+        {
+          "id": "sec320-proj-rep",
+          "name": "Final Report",
+          "weight_percent": 15.0,
+          "max_points": 100,
+          "earned_points": null,
+          "due_date": null,
+          "status": "Not Started"
+        }
+      ]
+    }
+  ],
+  "hurdles": [
+    {
+      "type": "category_average",
+      "target_category": "practical_tests",
+      "min_percentage": 50.0,
+      "description": "Achieve a weighted average of 50% or higher on all tests"
+    },
+    {
+      "type": "category_average",
+      "target_category": "labs",
+      "min_percentage": 50.0,
+      "description": "Achieve a weighted average of 50% or higher on all labs"
+    }
+  ]
+}

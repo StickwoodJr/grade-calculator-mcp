@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CourseGradingSchema",
+  "type": "object",
+  "required": [
+    "course_code",
+    "course_name",
+    "credits",
+    "term",
+    "is_technical",
+    "grading_type",
+    "categories"
+  ],
+  "properties": {
+    "course_code": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}[0-9]{3}$"
+    },
+    "course_name": {
+      "type": "string"
+    },
+    "credits": {
+      "type": "number",
+      "minimum": 0
+    },
+    "term": {
+      "type": "string"
+    },
+    "is_technical": {
+      "type": "boolean"
+    },
+    "grading_type": {
+      "type": "string",
+      "enum": ["percentage_gpa", "sat_un"]
+    },
+    "syllabus_file": {
+      "type": "string"
+    },
+    "passing_criteria": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "grade_scale": {
+      "type": "string",
+      "default": "Seneca 4.0"
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["category_id", "name", "weight_percent", "items"],
+        "properties": {
+          "category_id": { "type": "string" },
+          "name": { "type": "string" },
+          "weight_percent": { "type": "number", "minimum": 0, "maximum": 100 },
+          "drop_lowest_n": { "type": "integer", "minimum": 0, "default": 0 },
+          "hurdle_min_percent": { "type": "number", "minimum": 0, "maximum": 100 },
+          "hurdle_description": { "type": "string" },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "weight_percent"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "weight_percent": { "type": "number", "minimum": 0, "maximum": 100 },
+                "max_points": { "type": "number", "minimum": 0, "default": 100 },
+                "earned_points": { "type": ["number", "null"], "default": null },
+                "due_date": { "type": ["string", "null"], "default": null },
+                "status": {
+                  "type": "string",
+                  "enum": ["Not Started", "In Progress", "Done"],
+                  "default": "Not Started"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "hurdles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "description"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["category_average", "all_completed", "overall_minimum", "custom"]
+          },
+          "target_category": { "type": "string" },
+          "min_percentage": { "type": "number", "minimum": 0, "maximum": 100 },
+          "description": { "type": "string" }
+        }
+      }
+    }
+  }
+}
