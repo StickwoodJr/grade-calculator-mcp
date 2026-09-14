@@ -26,7 +26,16 @@ class ExtendLMClient:
     
     def __init__(self, base_url: str = EXTENDLM_MCP_URL, auth_token: Optional[str] = None):
         self.base_url = base_url
-        self.auth_token = auth_token or os.environ.get("EXTENDLM_AUTH_TOKEN", "")
+        token_file = os.path.expanduser("~/.gemini/config/extendlm_token.json")
+        file_token = ""
+        if os.path.exists(token_file):
+            try:
+                with open(token_file, 'r') as tf:
+                    t_data = json.load(tf)
+                    file_token = t_data.get("access_token", "")
+            except Exception:
+                pass
+        self.auth_token = auth_token or os.environ.get("EXTENDLM_AUTH_TOKEN", "") or file_token
         self.headers = {
             "Content-Type": "application/json",
             "User-Agent": "GradeCalculator-ExtendLM-Agent/1.0"
